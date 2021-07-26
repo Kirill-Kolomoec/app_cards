@@ -9,16 +9,16 @@
     <Grid x:Name="Back" Background="Gray" >
 
         <TextBlock x:Name="Start"   VerticalAlignment="Top" HorizontalAlignment="Left" Margin="344,134,0,0" Text="Start" TextWrapping="Wrap"  Width="112" TextAlignment="Center" FontFamily="Forte" FontSize="50" Height="68"/>
-        <TextBlock x:Name="label"   VerticalAlignment="Top" HorizontalAlignment="Left" Margin="180,207,0,0" Text="Enter number of cards" TextWrapping="Wrap"  Width="440" TextAlignment="Center" FontFamily="Script MT Bold" FontSize="25" Grid.ColumnSpan="2" Height="30"/>
+        <TextBlock x:Name="label"   VerticalAlignment="Top" HorizontalAlignment="Left" Margin="180,207,0,0" Text="Enter number of cards" TextWrapping="Wrap"  Width="440" TextAlignment="Center" FontFamily="Comic Sans MS" FontSize="25" Grid.ColumnSpan="2" Height="30"/>
         <TextBox x:Name="Num_Cards_Box" HorizontalAlignment="Left" Height="25" Margin="322,266,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156"/>
-        <Button x:Name="button_Start" Content="Start" HorizontalAlignment="Left" Margin="328,329,0,0" VerticalAlignment="Top" Height="35" Width="144" Click="button_Start_Click" />
+        <Button x:Name="button_Start" Content="Start" HorizontalAlignment="Left" Margin="328,329,0,0" VerticalAlignment="Top" Height="35" Width="144" Click="button_Start_Click" Background="#FFCF9999" />
         <TextBlock x:Name="main_block" Visibility="Hidden" HorizontalAlignment="Left" Height="306" Margin="60,23,0,0" Text="dog" TextWrapping="Wrap" VerticalAlignment="Top" Width="680" FontSize="140" FontFamily="Impact" FontStyle="Normal" TextAlignment="Center" Background="#FFDCC42A" />
         <TextBox x:Name="Cheсk_Box" Visibility="Hidden"  HorizontalAlignment="Left" Margin="280,346,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" Height="30"/>
         <Button x:Name="Cheсk_button" Visibility="Hidden" Content="Сheck" HorizontalAlignment="Center" Margin="0,383,0,0" VerticalAlignment="Top" Height="27" Width="144" Click="Cheсk_button_Click"/>
         <Button x:Name="button_next" IsEnabled="False" Visibility="Hidden" Content="Next" HorizontalAlignment="Left" Height="37" Margin="726,373,0,0" VerticalAlignment="Top" Width="56" Click="button_Click"/>
-        <Button x:Name="Settings" Content="Settings" VerticalAlignment="Top" HorizontalAlignment="Left"   Height="37" Width="134" Click="Settings_Click" Margin="30,373,0,0" />
-        <TextBlock x:Name="ScoreBlock" HorizontalAlignment="Left" Height="212" Margin="30,42,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" Background="#FFFFC7C7"/>
-        <TextBlock x:Name="Score_Label"   VerticalAlignment="Top" HorizontalAlignment="Left" Margin="41,10,0,0" Text="Scores" TextWrapping="Wrap"  Width="112" TextAlignment="Center" FontFamily="Forte" FontSize="24" Height="68"/>
+        <Button x:Name="Settings" Content="Settings" VerticalAlignment="Top" HorizontalAlignment="Left"   Height="37" Width="134" Click="Settings_Click" Margin="30,373,0,0" Background="#FF4799B2" />
+        <TextBlock x:Name="ScoreBlock" HorizontalAlignment="Left" Height="212" Margin="30,42,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" Background="#FFD5EADD"/>
+        <TextBlock x:Name="Score_Label"   VerticalAlignment="Top" HorizontalAlignment="Left" Margin="41,10,0,0" Text="Scores" TextWrapping="Wrap"  Width="112" TextAlignment="Center" FontFamily="Comic Sans MS" FontSize="24" Height="68"/>
 
 
     </Grid>

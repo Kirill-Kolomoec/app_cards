@@ -33,11 +33,7 @@ namespace pushka2000
 
             }
             CardArray.cards.Add(new Card(Box_Rus.Text, Box_Eng.Text));
-            Box_Eng.Visibility = Visibility.Hidden;
-            Box_Rus.Visibility = Visibility.Hidden;
-            button_Add_Card.Visibility = Visibility.Hidden;
-            label_Eng.Visibility = Visibility.Hidden;
-            label_Rus.Visibility =Visibility.Hidden;
+           
             MessageBox.Show("Card was added");
         }
 
@@ -48,6 +44,14 @@ namespace pushka2000
             button_Add_Card.Visibility = Visibility.Visible;
             label_Eng.Visibility = Visibility.Visible;
             label_Rus.Visibility = Visibility.Visible;
+
+            find_box.Visibility = Visibility.Hidden;
+            button_find.Visibility = Visibility.Hidden;
+            label_find.Visibility = Visibility.Hidden;
+            button_delete_card.Visibility = Visibility.Hidden;
+            new_word_Box.Visibility = Visibility.Hidden;
+            new_word_label.Visibility = Visibility.Hidden;
+            button_edit_card.Visibility = Visibility.Hidden;
         }
 
         private void button_Edit_Click(object sender, RoutedEventArgs e)
@@ -55,6 +59,18 @@ namespace pushka2000
             find_box.Visibility = Visibility.Visible;
             button_find.Visibility = Visibility.Visible;
             label_find.Visibility = Visibility.Visible;
+
+
+
+            Box_Eng.Visibility = Visibility.Hidden;
+            Box_Rus.Visibility = Visibility.Hidden;
+            button_Add_Card.Visibility = Visibility.Hidden;
+            label_Eng.Visibility = Visibility.Hidden;
+            label_Rus.Visibility = Visibility.Hidden;
+
+           
+            button_delete_card.Visibility = Visibility.Hidden;
+            
         }
 
         private void button_find_Click(object sender, RoutedEventArgs e)
@@ -93,12 +109,7 @@ namespace pushka2000
 
             CardArray.cards[CardArray.FindRus(find_box.Text).index].Eng = new_word_Box.Text;
 
-            new_word_Box.Visibility = System.Windows.Visibility.Hidden;
-            new_word_label.Visibility = System.Windows.Visibility.Hidden;
-            button_edit_card.Visibility = System.Windows.Visibility.Hidden;
-            find_box.Visibility = System.Windows.Visibility.Hidden;
-            button_find.Visibility = System.Windows.Visibility.Hidden;
-            label_find.Visibility = System.Windows.Visibility.Hidden;
+            
         }
 
         private void button_Delete_Click(object sender, RoutedEventArgs e)
@@ -106,6 +117,20 @@ namespace pushka2000
             find_box.Visibility = System.Windows.Visibility.Visible;
             button_delete_card.Visibility = System.Windows.Visibility.Visible;
             label_find.Visibility = System.Windows.Visibility.Visible;
+
+           
+            find_box.Text =null;
+
+            button_find.Visibility = Visibility.Hidden;
+            Box_Eng.Visibility = Visibility.Hidden;
+            Box_Rus.Visibility = Visibility.Hidden;
+            button_Add_Card.Visibility = Visibility.Hidden;
+            label_Eng.Visibility = Visibility.Hidden;
+            label_Rus.Visibility = Visibility.Hidden;
+
+            new_word_Box.Visibility = Visibility.Hidden;
+            new_word_label.Visibility = Visibility.Hidden;
+            button_edit_card.Visibility = Visibility.Hidden;
         }
 
         private void button_delete_card_Click(object sender, RoutedEventArgs e)
@@ -128,9 +153,7 @@ namespace pushka2000
                 }
                 MessageBox.Show("Card has been deleted successfully");
 
-                find_box.Visibility = System.Windows.Visibility.Hidden;
-                button_delete_card.Visibility = System.Windows.Visibility.Hidden;
-                label_find.Visibility = System.Windows.Visibility.Hidden;
+               
             }
             
 

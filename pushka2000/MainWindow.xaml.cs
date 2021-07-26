@@ -51,14 +51,14 @@ namespace pushka2000
                 {
                     if (CardArray.cards.Count >= Convert.ToInt32(Num_Cards_Box.Text) && Convert.ToInt32(Num_Cards_Box.Text) >= 1)
                     {
-                        button_next.Visibility = System.Windows.Visibility.Visible;
-                        main_block.Visibility = System.Windows.Visibility.Visible;
-                        Cheсk_button.Visibility = System.Windows.Visibility.Visible;
-                        Cheсk_Box.Visibility = System.Windows.Visibility.Visible;
-                        Start.Visibility = System.Windows.Visibility.Hidden;
-                        Num_Cards_Box.Visibility = System.Windows.Visibility.Hidden;
-                        label.Visibility = System.Windows.Visibility.Hidden;
-                        button_Start.Visibility = System.Windows.Visibility.Hidden;
+                        button_next.Visibility =Visibility.Visible;
+                        main_block.Visibility = Visibility.Visible;
+                        Cheсk_button.Visibility = Visibility.Visible;
+                        Cheсk_Box.Visibility = Visibility.Visible;
+                        Start.Visibility = Visibility.Hidden;
+                        Num_Cards_Box.Visibility = Visibility.Hidden;
+                        label.Visibility = Visibility.Hidden;
+                        button_Start.Visibility = Visibility.Hidden;
                         Settings.Visibility = Visibility.Hidden;
                         ScoreBlock.Visibility = Visibility.Hidden;
                         Score_Label.Visibility = Visibility.Hidden;

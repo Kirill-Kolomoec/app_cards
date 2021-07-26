@@ -45,7 +45,7 @@ namespace pushka2000
             string rezalt="";
             foreach (var item in scores)
             {
-                rezalt += $"{item.Scor} {item.Date} {item.Time}\n";
+                rezalt += $"    {item.Scor} - {item.Date} {item.Time}\n";
             }
 
             return rezalt;
